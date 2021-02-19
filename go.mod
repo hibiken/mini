@@ -1,4 +1,4 @@
-module github.com/hibiken/kiss
+module github.com/hibiken/mini
 
 go 1.15
 

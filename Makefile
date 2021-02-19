@@ -1,9 +1,9 @@
-kiss: kiss.go
+mini: mini.go
 ifdef VERSION
-	go build -ldflags="-X 'main.version=$(VERSION)'" -o kiss .
+	go build -ldflags="-X 'main.version=$(VERSION)'" -o mini .
 else
-	go build -o kiss .
+	go build -o mini .
 endif
 
 clean:
-	rm kiss
+	rm mini

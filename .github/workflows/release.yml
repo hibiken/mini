@@ -31,7 +31,7 @@ jobs:
       - name: Build release binary
         run: |
           GOOS=${{ matrix.goos }} GOARCH=amd64 make VERSION=${{ steps.release.outputs.tag_name }}
-          tar -czvf kiss_${{ steps.release.outputs.tag_name }}_${{ matrix.goos }}_amd64.tar.gz kiss
+          tar -czvf mini_${{ steps.release.outputs.tag_name }}_${{ matrix.goos }}_amd64.tar.gz mini
 
       - name: Upload Release Asset
         id: upload-release-asset
@@ -40,6 +40,6 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           upload_url: ${{ steps.release.outputs.upload_url }}
-          asset_path: ./kiss_${{ steps.release.outputs.tag_name }}_${{ matrix.goos }}_amd64.tar.gz
-          asset_name: kiss_${{ steps.release.outputs.tag_name }}_${{ matrix.goos }}_amd64.tar.gz
+          asset_path: ./mini_${{ steps.release.outputs.tag_name }}_${{ matrix.goos }}_amd64.tar.gz
+          asset_name: mini_${{ steps.release.outputs.tag_name }}_${{ matrix.goos }}_amd64.tar.gz
           asset_content_type: application/zip
