@@ -28,8 +28,8 @@ Kiss has a small set of features just enough to be a usable code editor.
 
 ## Limitations
 
-Currently kiss editor only supports MacOS.  
 Syntax highlight is enabled for C, C++, and Go, but it can be extended for other languages.
+Currently kiss editor only supports Unix-like OS (e.g. Linux, MacOS).  
 
 ## License
 

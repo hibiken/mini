@@ -1,5 +1,3 @@
-// +build darwin
-
 package main
 
 import (
@@ -29,9 +27,6 @@ var (
 )
 
 var ErrQuitEditor = errors.New("quit editor")
-
-const ioctlReadTermios = unix.TIOCGETA
-const ioctlWriteTermios = unix.TIOCSETA
 
 type Editor struct {
 	// cursor coordinates

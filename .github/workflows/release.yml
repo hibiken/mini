@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        goos: [darwin]
+        goos: [darwin, linux]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
