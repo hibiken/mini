@@ -1,9 +1,9 @@
 # Kiss
 
 Kiss is a small text editor, inspred by [antirez's kilo](http://antirez.com/news/108) editor.  
-It aims to [_Keep it simple stupid_](https://en.wikipedia.org/wiki/KISS_principle).
+It aims to [_Keep it simple, stupid_](https://en.wikipedia.org/wiki/KISS_principle).
 
-Demo: https://asciinema.org/a/392372
+[![asciicast](https://asciinema.org/a/392377.svg)](https://asciinema.org/a/392377)
 
 ## Features
 
